@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8">
+	<title>Array--操作方法concat()、slice()和splice()</title>
+	<script type="text/javascript">
+	/*concat()方法*/
+		/*var colors=["red","blue","green"];
+		var colors2=colors.concat("yellow",["black","brown"]);
+		console.log(colors);
+		console.log(colors2);
+		alert(colors);
+		alert(colors2);*/
+
+
+		/*slice()方法*/
+		/*var colors=["red","blue","green","yellow","black","brown"];
+		var colors2=colors.slice(1);
+		var colors3=colors.slice(1,4);
+		console.log(colors2);
+		console.log(colors3);*/
+
+		/*splice()方法*/
+		var colors=["red","blue","green"];
+		var removed=colors.splice(0,1);
+		/*alert(colors);
+		alert(removed);*/
+		removed=colors.splice(1,0,"yellow","orange");
+		/*alert(colors);
+		alert(removed);
+		console.log(colors);
+		console.log(removed);*/
+		removed=colors.splice(1,1,"red","purple");
+		alert(colors);
+		alert(removed);
+		console.log(colors);
+		console.log(removed);
+	</script>
+</head>
+<body>
+
+</body>
+</html>

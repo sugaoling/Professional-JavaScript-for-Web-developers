@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+	<title>RegExp实例方法</title>
+	<script type="text/javascript">
+	/*(1)exec()方法*/
+		/*var text ="mom and dad and baby";
+		var pattern =/mom (and dad (and baby)?)?/gi;
+		var matches=pattern.exec(text);
+		console.log(matches.index);//0
+		console.log(matches.input);//mom and dad and baby
+		console.log(matches[0]);//mom and dad and baby
+		console.log(matches[1]);//and dad and baby
+		console.log(matches[2]);//and baby
+
+		var text="cat, bat, sat, fat";
+		var pattern1=/.at/;
+		var matches=pattern1.exec(text);
+		console.log(matches.index);//0 
+		console.log(matches[0]);//cat
+		console.log(matches.lastIndex);//undefined  书上为0
+		matches=pattern1.exec(text);
+		console.log(matches.index);//0
+		console.log(matches[0]);//cat
+		console.log(matches.lastIndex);//undefined   书上为0
+
+		var pattern2=/.at/g;
+		matches=pattern2.exec(text);
+		console.log(matches.index);//0
+		console.log(matches[0]);//cat
+		console.log(matches.lastIndex);//undefined   书上为3
+		matches=pattern2.exec(text);
+		console.log(matches.index);//0
+		console.log(matches[0]);//bat
+		console.log(matches.lastIndex);//undefined  书上为8
+		*/
+
+		/*(2)test()方法*/
+		var text="000-00-0000";
+		var pattern=/\d{3}-\d{2}-\d{4}/;
+		if(pattern.test(text)){//true
+			alert("The pattern was matched.");
+		}
+
+		var pattern1= new RegExp("\\[bc\\]at","gi");
+		alert(pattern1.toString());
+		alert(pattern1.toLocaleString());
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

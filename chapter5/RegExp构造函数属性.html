@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+	<title>RegExp构造函数属性</title>
+	<script type="text/javascript">
+		var text="this has been a short number";
+		var pattern=/(.)hort/g;
+		if(pattern.test(text)){
+			console.log(RegExp.input);//this has been a short number
+			console.log(RegExp.leftContext);//this has been a
+			console.log(RegExp.rightContext);//number
+			console.log(RegExp.lastMatch);//short
+			console.log(RegExp.lastParen);//s
+			console.log(RegExp.multiline);//false
+			//使用ECMAScript标识符
+			console.log(RegExp.$_);//this has been a short number
+			console.log(RegExp["$`"]);//this has been a
+			console.log(RegExp["$'"]);//number
+			console.log(RegExp["$&"]);//short
+			console.log(RegExp["$+"]);//s
+			console.log(RegExp["$*"]);//false
+		}
+
+
+		//属性方法：RegExp.$1,RegExp.$2,RegExp.$3,...,RegExp.$8,RegExp.$9
+		var pattern2=/(..)or(.)/g;
+		if(pattern2.test(text)){
+			console.log(RegExp.$1);//sh
+			console.log(RegExp.$2);//t
+	
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>

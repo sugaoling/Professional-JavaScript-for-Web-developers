@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8">
+	<title>位置方法--indexOf()和lastIndexOf()</title>
+	<script type="text/javascript">
+		var numbers=[1,2,3,4,5,4,3,2,1];
+		/*
+		alert(numbers.indexOf(4));//3
+		alert(numbers.indexOf(1));//0
+		*/
+		/*alert(numbers.lastIndexOf(4));//5
+		alert(numbers.lastIndexOf(1));//8*/
+		//alert(numbers.indexOf(4,4));//5
+		//alert(numbers.lastIndexOf(4,4));//3
+		//alert(numbers.lastIndexOf(4,5));//5
+		//alert(numbers.lastIndexOf(4,3));//3
+		//alert(numbers.lastIndexOf(4,2));//-1没有找到
+		//alert(numbers.lastIndexOf(4,1);//-1没有找到
+		var person={name:"Nicholas"};
+		var people=[{name:"Nicholas"}];
+		var morePeople=[person];
+		alert(people.indexOf(person));
+		alert(morePeople.indexOf(person));
+	</script>
+</head>
+<body>
+
+</body>
+</html>
